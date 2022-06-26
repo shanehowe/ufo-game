@@ -8,7 +8,7 @@ int main() {
 
   greet();
   std::vector<std::string> codewords = {"tractor", "potato", "doordash", "macbook", "ireland", "chicken"};
-  std::string codeword = codewords[rand() % 5];
+  std::string codeword = codewords[rand() % codewords.size()];
   std::string answer = print_underscores(codeword);
 
   int misses = 0;
